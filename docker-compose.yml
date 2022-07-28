@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  git_resume_webservice:
+    build:
+      context: .
+    container_name: git_resume_webservice
+    restart: always
+    ports:
+      - 8000:8000
+    environment:
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_USER: guest
+      RABBITMQ_PASSWORD: guest
+      RABBITMQ_PORT: 5672
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_USER: null
+      REDIS_PASSWORD: null
+    networks:
+      - git_resume_network
+
+
+networks:
+  git_resume_network:
+    name: git_resume_network
+    external: true
