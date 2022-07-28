@@ -5,6 +5,5 @@ Webservice responsible for centralizing the GitResume structure's requests
 
 ---
 
-This repository is part of [Git Resume RPC Architecture](https://github.com/PabloEmidio/GitResume). But can be used as you pelase
-through nameko RPC, as seen in the example bellow.
+This repository is part of [Git Resume RPC Architecture](https://github.com/PabloEmidio/GitResume).
 
